@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  
+  body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+  }
+
+  nav {
+	background-image: url("assets/glx.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #000000;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a.active, a:hover {
+	background: #ffffff83;
+	transition: .5s;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: rgb(252, 252, 252);
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+@media (max-width: 952px) {
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+}
+
+ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+}
+
+nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+}
+
+nav ul li a {
+		font-size: 20px;
+	}
+ a.active {
+		background: none;
+		color: #eeff00;
+	}
+
+a:hover {
+	background: none;
+	color: #ff0000;
+}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+.principal img {
+	position: relative;
+	width: 45%;
+    top: 0px;
+    right: 10px;
+}
+   
+
+.titulo-site {
+    background-image:url("assets/artz.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo-site-descricao {
+	border-radius: 4px;
+	margin: auto;
+	box-shadow: 0px 2px 40px 15px rgb(255, 255, 255);
+	background-image: url("assets/fundo.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0 10px;
+    border-radius: 4px;
+    text-align: center;
+	
+  }
+
+.icons {
+    margin-bottom: 1px;
+	display: flex;
+	column-gap: 25px;
+	justify-content: center
+}
+.icon {
+	display: inline-flex;
+	width: 60px;
+    min-width: 30px;
+	height: 60px;
+    min-height: 30px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: #000000;
+	outline-color: #000000;
+}
+
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
