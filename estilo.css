@@ -5,20 +5,31 @@
 }
   
   body {
-    margin: 0;
-    padding: 0;
-    color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #fff;
+	color: #fff;
+	background-color: #000000;
+	/*background-image: url("assets/glx.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .topo-logo {
+    height: 85px;
   }
 
   nav {
-	background-image: url("assets/glx.jpg");
+	background-color: blueviolet;
+	/*background-image: url("assets/glx.jpg");
 	background-repeat: no-repeat;
     background-size: cover;
-	background-color: #000000;
+	position: relative;*/
 	height: 80px;
 	width: 100%;
+	box-shadow: 0px 2px 40px 15px rgba(255, 255, 255, 0.37);
 }
 
 label.logo {
@@ -29,6 +40,7 @@ label.logo {
 	font-weight: bold;
 }
 
+  
 nav ul {
 	float: right;
 	margin-right: 20px;
@@ -124,28 +136,28 @@ a:hover {
 }
    
 
-.titulo-site {
-    background-image:url("assets/artz.png");
+.titulo {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .titulo-site-descricao {
-	border-radius: 4px;
+  .titulo-descricao {
+	border-radius: 10px;
 	margin: auto;
-	box-shadow: 0px 2px 40px 15px rgb(255, 255, 255);
-	background-image: url("assets/fundo.png");
+	background-color:blueviolet;
+	/*box-shadow: 0px 2px 40px 15px rgb(255, 255, 255);*/
+	/*background-image: url("assets/glx.jpg");*/
 	background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    
     font-size: 24px;
-    padding: 0 10px;
+    padding: 0 50px;
     border-radius: 4px;
     text-align: center;
 	
-  }
+}
 
 .icons {
     margin-bottom: 1px;
@@ -153,6 +165,7 @@ a:hover {
 	column-gap: 25px;
 	justify-content: center
 }
+
 .icon {
 	display: inline-flex;
 	width: 60px;
@@ -167,6 +180,7 @@ a:hover {
 	transition-property: outline-offset, outline-color, background-color;
 	transition-duration: 0.25s;
 }
+
 .icon:hover {
 	outline-offset: 4px;
 }
@@ -211,3 +225,25 @@ a:hover {
 		transform: rotate(-15deg);
 	}
 }
+
+.container1 {
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 20px 0px;
+	background-color:rgba(0, 0, 0, 0.068);
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 20px;
+  }
+
+footer {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 30px;
+	
+  }
+   footer .container {
+    text-align: center;
+  }
