@@ -4,128 +4,111 @@
     text-decoration: none;
 }
   
-  body {
+body {
+	height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 	color: #fff;
 	background-color: #000000;
-	/*background-image: url("assets/glx.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;*/
 	height: 100%;
 	justify-content: center;
 	align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  .topo-logo {
-    height: 85px;
-  }
-
-  nav {
-	background-color: blueviolet;
-	/*background-image: url("assets/glx.jpg");
-	background-repeat: no-repeat;
-    background-size: cover;
-	position: relative;*/
-	height: 80px;
-	width: 100%;
-	box-shadow: 0px 2px 40px 15px rgba(255, 255, 255, 0.37);
-}
-
-label.logo {
-	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
-}
-
-  
-nav ul {
-	float: right;
-	margin-right: 20px;
-}
-
-nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-
-nav ul li a {
-	color: white;
-	font-size: 17px;
-	padding: 7px 13px;
-	border-radius: 3px;
-	text-transform: uppercase;
-}
-
-a.active, a:hover {
-	background: #ffffff83;
-	transition: .5s;
-}
-
-.checkbtn {
-	font-size: 30px;
-	color: rgb(252, 252, 252);
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
-}
-
-#check {
-	display: none;
-}
-
-@media (max-width: 952px) {
-	label.logo{
-		font-size: 30px;
-		padding-left: 50px;
-	}
-	nav ul li a{
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 858px) {
-	.checkbtn {
-		display: block;
 }
 
 ul {
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: #1d075f;
-		top: 80px;
-		left: -100%;
-		text-align: center;
-		transition: all .5s;
+    list-style: none;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
 }
 
-nav ul li {
-		display: block;
-		margin: 50px 0;
-		line-height: 30px;
+nav {
+    background-color: blueviolet;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
 }
 
-nav ul li a {
-		font-size: 20px;
-	}
- a.active {
-		background: none;
-		color: #eeff00;
-	}
-
-a:hover {
-	background: none;
-	color: #ff0000;
+p {
+    margin: 10px;
+    color: #FFF;
 }
-	#check:checked ~ ul {
-		left: 0;
-	}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.topo-logo {
+    height: 85px;
+  }
+
+li {
+    padding: 0 20px;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 45px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    background-color: #606060;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 700px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 20px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    ul.responsivo {
+        height: 260px;
+    }
 }
 
 .principal img {
@@ -135,30 +118,28 @@ a:hover {
     right: 10px;
 }
    
-
 .titulo {
-    height: 100vh;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .titulo-descricao {
+.titulo-descricao {
 	border-radius: 10px;
-	margin: auto;
 	background-color:blueviolet;
-	/*box-shadow: 0px 2px 40px 15px rgb(255, 255, 255);*/
-	/*background-image: url("assets/glx.jpg");*/
-	background-repeat: no-repeat;
-    background-size: cover;
-    
     font-size: 24px;
     padding: 0 50px;
     border-radius: 4px;
     text-align: center;
 	
 }
-
+.principal img {
+	position: relative;
+	width: 45%;
+    top: 0px;
+    right: 10px;
+}
 .icons {
     margin-bottom: 1px;
 	display: flex;
@@ -239,11 +220,11 @@ a:hover {
   }
 
 footer {
-    background-color: blueviolet;
-    color: #fff;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 30px;
 	
-  }
+}
    footer .container {
     text-align: center;
-  }
+}

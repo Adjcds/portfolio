@@ -6,57 +6,81 @@
 		<script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
     <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-		<link rel="stylesheet" href="estilo.css" >
+	<link rel="stylesheet" href="estilo.css" >
 	</head>
 <body>
-    
-    <nav>
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
-			<div class="topo-titulo">
-			  <a href="home.html">
-				<img class="topo-logo" src="assets/logo.png" alt="galaxia_artz" title="Logo galaxia_artz">
-			  </a>
-			  <ul>
-				<li><a class="active" href="#">Início</a></li>
-				<li><a href="#">Projetos</a></li>
-				<li><a href="sobre.html">Sobre mim</a></li>
-			</ul>
+		<nav>
+			<div class="logo">
+				<a href="home.html">
+					<img class="topo-logo" src="assets/logo.png" alt="galaxia_artz" title="Logo galaxia_artz">
+				  </a>
+			   <!--- <h1>logo</h1>-->
 			</div>
-	</nav>
-
-    <div class="principal">
-		<div class="titulo">
-	     <div class="titulo-descricao">
-				<div class="eu">
+			<button onclick="abrirMenu()">&#9776;</button>
+			<ul id="botoesMenu">
+				<a href="#">
+					<li>
+						<p>Início</p>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<p>Projetos</p>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<p>Sobre mim</p>
+					</li>
+				</a>
+			</ul>
+		</nav>
+	   
+			<script>
+				const arrayHeight = document.getElementsByClassName('height-nav');
+				const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+		
+				for (let navHeightObj of arrayHeight)
+					navHeightObj.style.height = navHeight + 'px';
+		
+				function abrirMenu() {
+					const botoesMenu = document.getElementById('botoesMenu');
+		
+					botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+				}
+				</script>
+		
+	<br>
+		<div class="principal">
+			<div class="titulo">
+			 <div class="titulo-descricao">
+					<div class="eu">
+						<br>
+				<img src="assets/eu.png" alt="eu" title="Adrielle"> 
+					<h1>Adrielle Jcds</h1>
 					<br>
-			<img src="assets/eu.png"> 
-				<h1>Adrielle Jcds</h1>
+					<p>&nbsp;&bull;&nbsp;Ilustradora&nbsp;&bull;&nbsp; Ux Designer &nbsp;&bull;&nbsp;Front end</p>
+					<br>
+					<div class="icons">
+						<a href="https://www.instagram.com/galaxia_artz" target="_blank" class="icon icon--instagram">
+					 <i class="ri-instagram-line"></i>	</a>
+						<a href="https://www.linkedin.com/in/ajcds/" target="_blank" class="icon icon--linkedin">
+					<i class="ri-linkedin-line"></i></a>
+						<a href="https://github.com/Adjcds" target="_blank" class="icon icon--github">
+				  <i class="ri-github-line"></i> </a>
+				</div>
 				<br>
-				<p>&nbsp;&bull;&nbsp;Ilustradora&nbsp;&bull;&nbsp; Ux Designer &nbsp;&bull;&nbsp;Front end</p>
-				<br>
-				<div class="icons">
-					<a href="https://www.instagram.com/galaxia_artz" target="_blank" class="icon icon--instagram">
-				 <i class="ri-instagram-line"></i>	</a>
-					<a href="https://www.linkedin.com/in/ajcds/" target="_blank" class="icon icon--linkedin">
-				<i class="ri-linkedin-line"></i></a>
-					<a href="https://github.com/Adjcds" target="_blank" class="icon icon--github">
-			  <i class="ri-github-line"></i> </a>
-            </div>
-			<br>
+			</div>
 		</div>
-	</div>
- </div>
- 
- <footer>
-    <div class="container1">
-      <h3>
-        ©2023 Galáxiartz  - Todos os direitos reservados
-	  </h3>
-    </div>
-  </footer>
-</body>
-
-</html>
+	 </div>
+	 
+	 <footer>
+		<div class="container1">
+		  <h3>
+			©2023 Galáxiartz  - Todos os direitos reservados
+		  </h3>
+		</div>
+	  </footer>
+	</body>
+	
+	</html>
