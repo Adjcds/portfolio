@@ -249,12 +249,14 @@ section.especiliadades {
 }
 
 section.especiliadades .flex {
-    gap: 60px;
+    gap: 40px;
 }
-
+.especialidades-box img{
+    height: 100px;
+}
 .especiliadades .especialidades-box {
     color: #fff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
