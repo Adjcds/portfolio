@@ -1,86 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
-    <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-	<link rel="stylesheet" href="estilo.css" >
+    <link rel="stylesheet" href="style.css">
 	</head>
 <body>
-		<nav>
-			<div class="logo">
-				<a href="home.html">
-					<img class="topo-logo" src="assets/logo.png" alt="galaxia_artz" title="Logo galaxia_artz">
-				  </a>
-			   <!--- <h1>logo</h1>-->
-			</div>
-			<button onclick="abrirMenu()">&#9776;</button>
-			<ul id="botoesMenu">
-				<a href="#">
-					<li>
-						<p>Início</p>
-					</li>
-				</a>
-				<a href="#">
-					<li>
-						<p>Projetos</p>
-					</li>
-				</a>
-				<a href="#">
-					<li>
-						<p>Sobre mim</p>
-					</li>
-				</a>
-			</ul>
-		</nav>
-	   
-			<script>
-				const arrayHeight = document.getElementsByClassName('height-nav');
-				const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
-		
-				for (let navHeightObj of arrayHeight)
-					navHeightObj.style.height = navHeight + 'px';
-		
-				function abrirMenu() {
-					const botoesMenu = document.getElementById('botoesMenu');
-		
-					botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
-				}
-				</script>
-		
-	<br>
-		<div class="principal">
-			<div class="titulo">
-			 <div class="titulo-descricao">
-					<div class="eu">
-						<br>
-				<img src="assets/eu.png" alt="eu" title="Adrielle"> 
-					<h1>Adrielle Jcds</h1>
-					<br>
-					<p>&nbsp;&bull;&nbsp;Ilustradora&nbsp;&bull;&nbsp; Ux Designer &nbsp;&bull;&nbsp;Front end</p>
-					<br>
-					<div class="icons">
-						<a href="https://www.instagram.com/galaxia_artz" target="_blank" class="icon icon--instagram">
-					 <i class="ri-instagram-line"></i>	</a>
-						<a href="https://www.linkedin.com/in/ajcds/" target="_blank" class="icon icon--linkedin">
-					<i class="ri-linkedin-line"></i></a>
-						<a href="https://github.com/Adjcds" target="_blank" class="icon icon--github">
-				  <i class="ri-github-line"></i> </a>
-				</div>
-				<br>
-			</div>
-		</div>
-	 </div>
-	 
-	 <footer>
-		<div class="container1">
-		  <h3>
-			©2023 Galáxiartz  - Todos os direitos reservados
-		  </h3>
-		</div>
-	  </footer>
-	</body>
-	
-	</html>
+    <nav>
+      <div class="logo">
+         <a href="home.html">
+           <img class="topo-logo" src="assets/logo.png" alt="galaxia_artz" title="Logo galaxia_artz">
+          </a>
+        </div>
+        <button onclick="abrirMenu()">&#9776;</button>
+        <ul id="botoesMenu">
+            <a href="home.html">
+                <li>
+                    <p>Início</p>
+                </li>
+            </a>
+            <a href="projetos.html">
+                <li>
+                    <p>Projetos</p>
+                </li>
+            </a>
+            <a href="sobre.html">
+                <li>
+                    <p>Sobre mim</p>
+                </li>
+            </a>
+        </ul>
+</nav>
+
+<script>
+        const arrayHeight = document.getElementsByClassName('height-nav');
+        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+        for (let navHeightObj of arrayHeight)
+            navHeightObj.style.height = navHeight + 'px';
+
+        function abrirMenu() {
+            const botoesMenu = document.getElementById('botoesMenu');
+
+            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+        }
+</script>
+
+<main>
+<section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronta para criar a presença online dos seus sonhos.</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/galaxia_artz" target="_blank" class="icon icon--instagram">
+                         <i class="ri-instagram-line"></i>	</a>
+                            <a href="https://www.linkedin.com/in/ajcds/" target="_blank" class="icon icon--linkedin">
+                        <i class="ri-linkedin-line"></i></a>
+                            <a href="https://github.com/Adjcds" target="_blank" class="icon icon--github">
+                      <i class="ri-github-line"></i> </a>
+                    </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                         <img src="assets/eu.png" alt="">
+                     </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+</section><!--topo-do-site-->
+<section class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>SKILLS.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-cart"></i>
+                        <h3>Loja online</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-wordpress"></i>
+                        <h3>Blog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+</section><!--especiliadades-->
+<section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="assets/eu.png" alt="">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU ADRIELLE SANTOS.</span></h2>
+                        <p>&nbsp;&bull;&nbsp;Ilustradora&nbsp;&bull;&nbsp; Ux Designer &nbsp;&bull;&nbsp;Front end</p>
+                        <p>Eu sou designer (ilustradora e gráfica), atualmente estou me dedicando a área da programação com os estudos em Front-end. A meu sonho é criar experiências valiosas que unam tecnologia humanizada e bem-estar social centrado em atender às necessidades das pessoas. Tenho um grande interesse em aprender e aprimorar minhas habilidades, para tornar-me uma excelente profissional. </p>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+</section><!--sobre-->
+<section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+</section><!--portfolio-->
+<section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+</main>
+    <footer>
+        <div class="line-footer borda">
+        </div>
+            <div class="container1">
+              <h3>
+                ©2023 Galáxiartz  - Todos os direitos reservados
+              </h3>
+        </div>
+            <div class="interface">
+            <div class="line-footer">
+            <div class="flex">
+        </div>
+         </div>
+            <div class="line-footer borda">
+        </div>
+    </footer>
+</body>
+</html>
