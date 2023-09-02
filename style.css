@@ -44,6 +44,8 @@ ul {
     transition: all .5s;
 }
 
+/*barra de nav*/
+
 nav {
     background-color: blueviolet;
     padding: 0 10px;
@@ -224,8 +226,8 @@ section.topo-do-site .flex {
 	outline-color: #0077b5;
 }
 .icon--github:hover {
-	background-color: #000000;
-	outline-color: #000000;
+	background-color: #4056d1;
+	outline-color: #4056d1;
 }
 
 @keyframes shake {
@@ -249,7 +251,7 @@ section.especiliadades {
 }
 
 section.especiliadades .flex {
-    gap: 40px;
+    gap: 125px;
 }
 .especialidades-box img{
     height: 100px;
