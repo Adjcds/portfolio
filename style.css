@@ -182,7 +182,6 @@ section.topo-do-site .flex {
 }
 
 /*icones */
-
 .icons {
     margin-bottom: 1px;
 	display: flex;
@@ -296,7 +295,7 @@ section.topo-do-site .flex {
 /*projetos*/
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #0000001d;
+  
 }
 
 section.portfolio .flex {
@@ -313,6 +312,11 @@ h2.titulo {
     font-size: 38px;
     text-align: center;
 }
+
+.interfaces p { 
+    text-align: center;
+}
+
 
 .img-port {
     width: 300px;
@@ -349,15 +353,32 @@ h2.titulo {
     opacity: 1;
 }
 
+.icone {
+    height: 80px; /* Tamanho padrão do ícone */
+    width: 80px; /* Tamanho padrão do ícone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 580px; /* Espaçamento à esquerda para separar do parágrafo */
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .icone {
+        height: 60px; /* Tamanho menor do ícone para telas menores */
+        width: 60px; /* Tamanho menor do ícone para telas menores */
+        margin-left: 200px; /* Reduza o espaçamento à esquerda para telas menores */
+    }
+}
+
 /*skills*/
 
-/* Estilos para a seção .skill */
 .skill {
     padding: 100px;
     display: grid;
     gap: 30px;
     justify-content: center;
-    background-color: #151515;
+    background-color: #0000001d;
 }
 
 .boxes {
@@ -381,7 +402,7 @@ h2.titulo {
 .especialidades-box {
     flex: 0 0 calc(50% - 20px); /* Redefinido para 50% de largura em dispositivos menores */
     background-color: #000000;
-    padding: 10px;
+    padding: 1px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -394,6 +415,12 @@ h2.titulo {
     height: auto;
 }
 
+
+/* Adicione esta regra para mudar a cor de fundo quando o mouse passar */
+.especialidades-box:hover {
+    background-color: blueviolet; /* Cor roxa ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adicione uma transição suave */
+}
 
 /* Responsividade para dispositivos menores */
 @media screen and (max-width: 768px) {
@@ -421,12 +448,12 @@ main {
 }
 
 main .sobre {
-    margin-top: 10px;
+   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
-    padding: 40px;
+    padding: 90px;
 }
 
 .sobre_titulo {
@@ -543,6 +570,54 @@ main .sobre {
     }
 }
 
+/* Estilos gerais */
+#formacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    background-color: 0000001d;
+}
+
+.formacao-title {
+    width: 100%;
+    text-align: center;
+    
+}
+
+/* Estilo para cada item de formação */
+.formacao-item {
+    flex: 1;
+    background-color: #080808;
+    padding: 20px;
+    box-shadow: 0px 0px 10px blueviolet;
+    margin-bottom: 20px;
+    flex-basis: calc(33.33% - 20px); /* Três itens por linha */
+    
+}
+
+.formacao-item h4 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.formacao-item p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.formacao-item span {
+    font-weight: bold;
+}
+
+/* Estilos para telas menores (pode ser ajustado conforme necessário) */
+@media screen and (max-width: 768px) {
+    .formacao-item {
+        flex-basis: calc(50% - 20px); /* Dois itens por linha em telas menores */
+    }
+}
 
 /* RESPONSIVO */
 
@@ -596,4 +671,37 @@ main .sobre {
     .sobre_conteudo {
         grid-column: 1/-1;
     }
+}
+/*footer*/
+footer {
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para o texto de autoria */
+.author-info {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+@media (min-width: 768px) {
+    .back-to-top img{
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff00;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção original */
+}
 }
