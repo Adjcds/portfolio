@@ -367,7 +367,7 @@ h2.titulo {
     .icone {
         height: 60px; /* Tamanho menor do ícone para telas menores */
         width: 60px; /* Tamanho menor do ícone para telas menores */
-        margin-left: 200px; /* Reduza o espaçamento à esquerda para telas menores */
+        margin-left: 180px; /* Reduza o espaçamento à esquerda para telas menores */
     }
 }
 
