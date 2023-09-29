@@ -776,43 +776,14 @@ main .sobre {
     }
 }
 
-/* Responsive styles for smaller screens (e.g., tablets and mobile phones) */
-@media screen and (max-width: 767px) {
-    .sobre {
-        grid-template-columns: 1fr; /* Change to a single column layout */
-        gap: 20px;
-        padding: 40px;
-    }
-
-    .sobre_titulo {
-        text-align: center;
-    }
-
+@media(max-width: 992px) {
     .sobre img {
-        max-width: 100%;
+        grid-column: 1/-1;
+        justify-self: center;
     }
 
-    .sobre_texto h2 {
-        font-size: 1.8rem;
-    }
-
-    .sobre_texto p {
-        font-size: 1rem; /* Adjust the font size as needed */
-    }
-
-    .sobre_info {
-        grid-template-columns: 1fr; /* Change to a single column layout */
-        text-align: center; /* Center-align the content */
-        margin-top: 20px;
-    }
-
-    .sobre_info i {
-        display: block;
-        margin: 0 auto 10px;
-    }
-
-    .sobre_info p {
-        font-size: 1rem; /* Adjust the font size as needed */
+    .sobre_conteudo {
+        grid-column: 1/-1;
     }
 }
 
