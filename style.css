@@ -202,6 +202,7 @@ section.topo-do-site .flex {
 	outline: 2px solid #fff;
 	transition-property: outline-offset, outline-color, background-color;
 	transition-duration: 0.25s;
+    scroll-behavior:smooth;
 }
 
 .icon:hover {
@@ -373,6 +374,13 @@ h2.titulo {
 
 /*skills*/
 
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Alinha as flexbox com espaço uniforme entre elas */
+    align-items: center;
+    gap: 50px;
+}
 
 .skills {
     background-color: rgba(34, 34, 34, 0);
@@ -382,13 +390,6 @@ h2.titulo {
     justify-content: space-around; /* Alinha as flexbox com espaço uniforme entre elas */
 }
 
-.containers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    
-}
 
 .skill1{
     width: 300px;
@@ -398,6 +399,11 @@ h2.titulo {
 .skill2{
     width: 300px;
 }
+
+.skill3{
+    width: 300px;
+}
+
 
 .habilidades {
 	position: relative;
@@ -654,7 +660,6 @@ main {
 }
 
 main .sobre {
-   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -729,7 +734,7 @@ main .sobre {
 }
 
 .sobre_texto p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     grid-row: 2;
     grid-column: 1/-1;
 }
