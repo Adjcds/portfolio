@@ -83,6 +83,6 @@ Como designer gráfica autônoma, possuo uma ampla experiência na criação de 
 
 ## Como Entrar em Contato
 
-Sinta-se à vontade para entrar em contato comigo por e-mail em [adrielle.dev@gmail.com](mailto:adrielle.dev@gmail.com) ou me seguir nas redes sociais mencionadas acima. Estou sempre aberto a novas oportunidades, colaborações e conexões.
+Sinta-se à vontade para entrar em contato comigo por e-mail em [adrielle.dev@gmail.com](mailto:adrielle.dev@gmail.com) ou me seguir nas redes sociais mencionadas acima. Estou sempre aberta a novas oportunidades, colaborações e conexões.
 
 Muito obrigado por visitar o meu portfólio!
