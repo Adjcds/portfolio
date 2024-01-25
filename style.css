@@ -15,8 +15,48 @@ body {
 	height: 100%;
 	justify-content: center;
 	align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
 }
+.boxprincipal {
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+}
+
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.degrade{
+    background: linear-gradient(to right, #000000, #444444);
+}
+
+/* ESTILO DO HEADER */
+
+.boxprincipal{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.boxprincipal img{
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.boxprincipal h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
 
 p {
     color: white;
@@ -76,8 +116,6 @@ li {
     padding: 0 20px;
 }
 
-
-
 button {
     background-color: transparent;
     border: none;
@@ -93,7 +131,7 @@ ul a:hover,
 button:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(167, 23, 23, 0.2);
 }
 
 .content {
