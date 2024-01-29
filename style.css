@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fugaz+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +59,6 @@ a{
     font-weight: 300;
 }
 
-
 p {
     color: white;
     font-size: 20px;
@@ -71,10 +72,6 @@ p {
 
 .flex {
     display: flex;
-}
-
-h2.titulo span {
-    color: blueviolet;
 }
 
 ul {
@@ -98,8 +95,9 @@ nav {
 nav p {
     margin: 10px;
     color: #FFF;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
 }
 
 nav,
@@ -119,7 +117,7 @@ li {
 button {
     background-color: transparent;
     border: none;
-    color: #FFF;
+    color: #0a0000;
     font-size: 45px;
     position: absolute;
     right: 10px;
@@ -127,18 +125,19 @@ button {
     display: none;
 }
 
-ul a:hover,
+nav  p:hover,
 button:hover {
     cursor: pointer;
     opacity: 0.8;
-    color: rgba(167, 23, 23, 0.2);
+    color: rgb(206, 112, 224);
 }
 
 .content {
-    background-color: #606060;
+    background-color: #634343;
     width: 100%;
     height: 100vh;
 }
+
 
 @media (max-width: 700px) {
 
@@ -188,36 +187,51 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 {
-    color: #fff;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(255, 255, 255);
     font-size: 42px;
     line-height: 40px;
 }
 
-.topo-do-site  h1 span {
-    color: blueviolet;
+.topo-do-site h1 span {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color:  rgb(131, 68, 190);
+    font-size: 42px;
+    line-height: 40px;
 }
 
-.topo-do-site  p {
-    color: #fff;
-    margin: 40px 0;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif
+.topo-do-site h2 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgba(251, 246, 255, 0.808);
+    font-size: 30px;
+    line-height: 40px;
 }
 
-.topo-do-site  img {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+.topo-do-site img {
+    max-width: 80%;
+    height: auto;
+  }
+
+.logo{
+    margin-left: 50px;
 }
 
+.logo h2 {
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(255, 253, 255);
 
-@keyframes flutuar {
-    0% {
-        top: 0;
-    }
+}
 
-    100% {
-        top: 30px;
-    }
+.logo span{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(131, 68, 190);
 }
 
 /*icones */
@@ -270,8 +284,8 @@ section.topo-do-site .flex {
 	outline-color: #0077b5;
 }
 .icon--github:hover {
-	background-color: #4056d1;
-	outline-color: #4056d1;
+	background-color: #40d164;
+	outline-color: #40d164;
 }
 
 @keyframes shake {
