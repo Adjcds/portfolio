@@ -29,7 +29,6 @@ body {
     color: #000000;
 }
 
-
 a{
     text-decoration: none;
     color: #ffffff;
@@ -426,7 +425,6 @@ h2.titulo {
 }
 
 /*skills*/
-
 .containers {
     display: flex;
     flex-wrap: wrap;
@@ -438,7 +436,7 @@ h2.titulo {
 .skills {
     background-color: rgba(34, 34, 34, 0);
     position: relative;
-    padding: 150px; /* Mantém o tamanho original */
+    padding: 50px; /* Mantém o tamanho original */
     display: flex; /* Adicione um display flex para alinhar as flexbox horizontalmente */
     justify-content: space-around; /* Alinha as flexbox com espaço uniforme entre elas */
 }
@@ -601,55 +599,6 @@ h2.titulo {
 }
 
 
-
-/* Estilos gerais */
-#formacao {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-    background-color: 0000001d;
-}
-
-.formacao-title {
-    width: 100%;
-    text-align: center;
-    
-}
-
-/* Estilo para cada item de formação */
-.formacao-item {
-    flex: 1;
-    background-color: #080808;
-    padding: 20px;
-    box-shadow: 0px 0px 10px blueviolet;
-    margin-bottom: 20px;
-    flex-basis: calc(33.33% - 20px); /* Três itens por linha */
-    
-}
-
-.formacao-item h4 {
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.formacao-item p {
-    font-size: 16px;
-    color: #ffffff;
-    margin: 5px 0;
-}
-
-.formacao-item span {
-    font-weight: bold;
-}
-
-/* Estilos para telas menores (pode ser ajustado conforme necessário) */
-@media screen and (max-width: 768px) {
-    .formacao-item {
-        flex-basis: calc(50% - 20px); /* Dois itens por linha em telas menores */
-    }
-}
 
 /* RESPONSIVO */
 
