@@ -196,7 +196,7 @@ section.topo-do-site .flex {
 .topo-do-site h1 span {
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'Fugaz One', sans-serif;
-    color:  rgb(131, 68, 190);
+    color:  rgb(248, 30, 219);
     font-size: 42px;
     line-height: 40px;
 }
@@ -230,7 +230,7 @@ section.topo-do-site .flex {
 .logo span{
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'Fugaz One', sans-serif;
-    color: rgb(131, 68, 190);
+    color: rgb(248, 30, 219);
 }
 
 /*icones */
@@ -726,7 +726,7 @@ main .sobre {
 }
 
 .sobre_texto h2::after {
-    background-color: blueviolet;
+    background-color: rgb(248, 30, 219);
     height: 6px;
     width: 60px;
     margin: 20px 0;
@@ -751,7 +751,7 @@ main .sobre {
 }
 
 .sobre_info i {
-    color: blueviolet;
+    color: rgb(248, 30, 219);
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
@@ -867,7 +867,7 @@ main .sobre {
 
 /*footer*/
 footer {
-    background-color: blueviolet;
+    background-color: rgb(248, 30, 219);
     color: #fff;
     text-align: center;
     padding: 30px;
