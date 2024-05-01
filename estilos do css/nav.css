@@ -1,0 +1,94 @@
+
+/*barra de nav*/
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+}
+
+nav p {
+    margin: 10px;
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.topo-logo {
+    height: 85px;
+  }
+
+li {
+    padding: 0 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fcfcfc;
+    font-size: 45px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+nav  p:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(206, 112, 224);
+}
+
+.content {
+    background-color: #fff0f0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media (max-width: 700px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 20px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    ul.responsivo {
+        height: 260px;
+    }
+}

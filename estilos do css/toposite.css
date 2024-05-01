@@ -1,0 +1,102 @@
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 80px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color:  rgb(248, 30, 219);
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h2 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgba(251, 246, 255, 0.808);
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.topo-do-site img {
+    max-width: 80%;
+    height: auto;
+  }
+
+.logo{
+    margin-left: 50px;
+}
+
+.logo h2 {
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(255, 253, 255);
+
+}
+
+.logo span{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(248, 30, 219);
+}
+
+
+/*Responsi Topo site*/
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+}
