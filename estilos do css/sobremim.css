@@ -1,6 +1,3 @@
-
-/* SEÇÃO PRINCIPAL SOBRE MIM */
-
 main {
     background-color: #111;
     color: white;
@@ -127,7 +124,7 @@ main .sobre {
         transform: translate3d(0, 0, 0);
     }
 }
-/* Estilos para dispositivos menores, como tablets e smartphones */
+
 @media (max-width: 768px) {
     main .sobre {
         grid-template-columns: 1fr;
@@ -176,7 +173,6 @@ main .sobre {
     }
 }
 
-/* Estilos para dispositivos ainda menores, como smartphones em modo retrato */
 @media (max-width: 576px) {
     main .sobre {
         padding: 15px;

@@ -1,9 +1,7 @@
-
-/*skills*/
 .containers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Alinha as flexbox com espaço uniforme entre elas */
+    justify-content: space-around; 
     align-items: center;
     gap: 50px;
 }
@@ -11,9 +9,9 @@
 .skills {
     background-color: rgba(34, 34, 34, 0);
     position: relative;
-    padding: 50px; /* Mantém o tamanho original */
-    display: flex; /* Adicione um display flex para alinhar as flexbox horizontalmente */
-    justify-content: space-around; /* Alinha as flexbox com espaço uniforme entre elas */
+    padding: 50px; 
+    display: flex; 
+    justify-content: space-around; 
 }
 
 

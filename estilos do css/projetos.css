@@ -1,5 +1,3 @@
-
-/*projetos*/
 section.portfolio {
     padding: 80px 4%;
   
@@ -61,19 +59,9 @@ h2.titulo {
 }
 
 .icone {
-    height: 80px; /* Tamanho padrão do ícone */
-    width: 80px; /* Tamanho padrão do ícone */
+    margin-bottom: 1px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 580px; /* Espaçamento à esquerda para separar do parágrafo */
+    column-gap: 25px;
+    justify-content: center; 
 }
 
-/* Estilos para telas menores */
-@media screen and (max-width: 768px) {
-    .icone {
-        height: 60px; /* Tamanho menor do ícone para telas menores */
-        width: 60px; /* Tamanho menor do ícone para telas menores */
-        margin-left: 180px; /* Reduza o espaçamento à esquerda para telas menores */
-    }
-}

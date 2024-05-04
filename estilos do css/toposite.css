@@ -1,5 +1,3 @@
-
-/* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
     padding: 80px 4%;
 }
@@ -59,10 +57,7 @@ section.topo-do-site .flex {
 }
 
 
-/*Responsi Topo site*/
 @media screen and (max-width: 1020px) {
-
-    /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
     }
@@ -76,13 +71,10 @@ section.topo-do-site .flex {
         line-height: 30px;
     }
 
-    /* CABEÇALHO */
     .menu-desktop,
     .btn-contato {
         display: none;
     }
-
-    /* TOPO DO SITE */
 
     section.topo-do-site .flex {
         gap: 40px;
