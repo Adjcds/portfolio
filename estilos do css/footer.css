@@ -1,0 +1,30 @@
+footer {
+    background-color: rgb(248, 30, 219);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.author-info {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+    .back-to-top img{
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff00;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; 
+    height: auto; 
+}
+}
