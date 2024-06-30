@@ -9,21 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-<<<<<<< HEAD
-=======
     <link rel="shortcut icon" href="ico/icon.ico">
->>>>>>> 1140fa04677508df96237b4817c3523dde72b526
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fugaz+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fugaz+One&display=swap" rel="stylesheet">
-<<<<<<< HEAD
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estrelasfundo.css">
     <title>Galáxia Artz</title>
-=======
     <link rel="stylesheet" href="estilos do css/bodystyle.css">
     <link rel="stylesheet" href="estilos do css/nav.css">
     <link rel="stylesheet" href="estilos do css/estiloheader.css">
@@ -35,16 +30,11 @@
     <link rel="stylesheet" href="estilos do css/footer.css">
     <link rel="stylesheet" href="estilos do css/estrelasfundo.css">
     <title>JinnieArtz</title>
->>>>>>> 1140fa04677508df96237b4817c3523dde72b526
 	</head>
 <body>
     <nav>
       <div class="logo">
-<<<<<<< HEAD
-          <h2>Jinnie<span>artz</span></h2>
-=======
-          <h2>Jinnie <span>artz</span></h2>
->>>>>>> 1140fa04677508df96237b4817c3523dde72b526
+          <h1>Jinnie<span>artz</span></h1>
         </div>
         <button onclick="abrirMenu()">&#9776;</button>
         <ul id="botoesMenu">
@@ -53,7 +43,7 @@
                     <p>Início</p>
                 </li>
             </a>
-            <a href="#portfolio">
+            <a href="#projetos">
                 <li>
                     <p>Projetos</p>
                 </li>
@@ -68,39 +58,42 @@
                     <p>Sobre mim</p>
                 </li>
             </a>
-<<<<<<< HEAD
-        </ul>
-=======
         </ul> 
->>>>>>> 1140fa04677508df96237b4817c3523dde72b526
 </nav>
 <script>
-        const arrayHeight = document.getElementsByClassName('height-nav');
-        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+    const arrayHeight = document.getElementsByClassName('height-nav');
+    const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
 
-        for (let navHeightObj of arrayHeight)
-            navHeightObj.style.height = navHeight + 'px';
+    for (let navHeightObj of arrayHeight) {
+        navHeightObj.style.height = navHeight + 'px';
+    }
 
-        function abrirMenu() {
-            const botoesMenu = document.getElementById('botoesMenu');
+    function abrirMenu() {
+        const botoesMenu = document.getElementById('botoesMenu');
+        botoesMenu.classList.toggle('responsivo'); // Toggle para adicionar ou remover a classe responsivo
+    }
 
-            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
-        }
+    // Função para fechar o menu após selecionar um item
+    function fecharMenu() {
+        const botoesMenu = document.getElementById('botoesMenu');
+        botoesMenu.classList.remove('responsivo'); // Remove a classe responsivo para fechar o menu
+    }
+
+    // Selecionando todos os links dentro do menu para adicionar o evento de fecharMenu()
+    const linksMenu = document.querySelectorAll('#botoesMenu a');
+    linksMenu.forEach(link => {
+        link.addEventListener('click', fecharMenu); // Adiciona o evento de clique para fechar o menu
+    });
 </script>
-<main>
-    <div class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
-    </div>
+
+
     <section class="topo-do-site" id="inicio">
         <div class="interface">
             <div class="flex">
                 <div class="boxprincipal" >
-                    <h1>Adrielle <span>Jdcs</span></h1>
+                    <h2>Adrielle Jdcs</h2>
                     <br>
-                    <h2>Front-end | UX/UI Designer | Designer Gráfica | Estudante de Ads </h2>
+                    <h3>Front-end | UX/UI Designer | Designer Gráfica | Estudante de Ads </h3>
                     <br>
                     <div class="icons">
                         <a href="https://www.instagram.com/starvalentz/" target="_blank" class="icon icon--instagram">
@@ -112,55 +105,76 @@
                 </div>
                 </div>
                 <div class="img-topo-site">
-                     <img src="assets/me.png" alt="">
+                     <img src="assets/me.png" alt="eu">
                  </div>
             </div>
         </div>
 </section>
-<section id="portfolio"  class="portfolio">
+<section id="projetos" class="portfolio">
     <div class="interfaces">
         <h2 class="titulo">Meus <span>Projetos</span></h2>
         <br>
         <p>Projetos do Básico ao Complexo</p>
-        <p>Saiba mais no meu repositório do Github</p> 
-        <br>
-        <div class="icone">
-        <a href="https://github.com/Adjcds" target="_blank" class="icon icon--github">
-            <i class="ri-github-line"></i> </a>
+        <p>Saiba mais no meu repositório do Github:</p>
+        <div class="iconegithub">
+            <a href="https://github.com/Adjcds" target="_blank" class="icon icon--github">
+                <i class="ri-github-line"></i>
+            </a>
         </div>
-        <br>
-        <div class="flex">
-            <div class="img-port" style="background-image: url(assets/nx.png);">
-             <a href="https://adjcds.github.io/LoginNetflix/home.html" target="_blank" ><div class="overlay">Login Netflix<br><br> (Html e Css)</div></a>
+        <div class="flexis">
+            <div class="card-projeto">
+                <div class="imagens" style="background-image: url(assets/netf.png);"></div>
+                <div class="container-info">
+                    <h3>Login Netflix</h3>
+                    <p>(HTML e CSS)</p>
+                    <a href="https://adjcds.github.io/LoginNetflix/home.html" target="_blank"><i class="fas fa-eye"></i>Ver Projeto</i></a>
+                </div>
             </div>
-            <div class="img-port" style="background-image: url(assets/gamejs.png);">
-            <a href="https://adjcds.github.io/GameJS/" target="_blank"><div class="overlay">Game da Cobrinha<br><br> (Html, css e JavaScript)</div></a>
+            <div class="card-projeto">
+                <div class="imagens" style="background-image: url(assets/cobra.jpg);"></div>
+                <div class="container-info">
+                    <h3>Game da Cobrinha</h3>
+                    <p>(HTML, CSS e JavaScript)</p>
+                    <a href="https://adjcds.github.io/GameJS/" target="_blank"><i class="fas fa-eye"></i>Ver Projeto</a>
+                </div>
             </div>
-            <div class="img-port" style="background-image: url(assets/sov.jpg);">
-            <a href="https://gelateria-delta.vercel.app/" target="_blank"><div class="overlay">Sorveteria<br><br> ( React, Javacript e css) </div></a>
+            <div class="card-projeto">
+                <div class="imagens" style="background-image: url(assets/sorvete.jpg);"></div>
+                <div class="container-info">
+                    <h3>Sorveteria</h3>
+                    <p>(React, JavaScript e CSS)</p>
+                    <a href="https://gelateria-delta.vercel.app/" target="_blank"><i class="fas fa-eye"></i>Ver Projeto</a>
+                </div>
             </div>
-             <div class="img-port" style="background-image: url(assets/cute.png);">
-            <a href="https://adjcds.github.io/KreewHait/KreewHait.html" target="_blank"><div class="overlay">KreeWHait<br><br> (Html, css e Javacript)</div></a>
+            <div class="card-projeto">
+                <div class="imagens" style="background-image: url(assets/kreew.png);"></div>
+                <div class="container-info">
+                    <h3>KreeWHait</h3>
+                    <p>(HTML, CSS e JavaScript)</p>
+                    <a href="https://adjcds.github.io/KreewHait/KreewHait.html" target="_blank"><i class="fas fa-eye"></i>Ver Projeto</a>
+                </div>
             </div>
-            <div class="img-port" style="background-image: url(assets/dinotrutor.jpg);">
-            <a href="https://github.com/Adjcds" target="_blank"><div class="overlay">Verifique meu Github<br><br> (DinoBuild)</div></a>
+            <div class="card-projeto">
+                <div class="imagens" style="background-image: url(assets/galaxia.png);"></div>
+                <div class="container-info">
+                    <h3>DinoBuild</h3>
+                    <p>(Em construção)</p>
+                    <a href="https://github.com/Adjcds" target="_blank"><i class="fas fa-eye"></i>Ver no GitHub</a>
+                </div>
             </div>
-<<<<<<< HEAD
-            <div class="img-port" style="background-image: url(assets/galaxia.png);">
-                <a href="https://github.com/Adjcds" target="_blank"><div class="overlay">Verifique meu Github<br><br> (Em Construção)</div></a>
+            <div class="card-projeto">
+                <div class="imagens" style="background-image: url(assets/galaxia.png);"></div>
+                <div class="container-info">
+                    <h3>Em Construção</h3>
+                    <p>(Em construção)</p>
+                    <a href="https://github.com/Adjcds" target="_blank"><i class="fas fa-eye"></i>Ver no GitHub</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<h2 class="titulo" id="skills">Minhas <span>Skills</span></h2>
-=======
-            <div class="img-port" style="background-image: url(assets/dinotrutor.jpg);">
-                <a href="https://github.com/Adjcds" target="_blank"><div class="overlay">Verifique meu Github<br><br> (DinoBuild)</div></a>
-        </div>
-    </div>
-</section>
-<h2 class="titulo" id="skills"><span>Skills</span></h2>
->>>>>>> 1140fa04677508df96237b4817c3523dde72b526
-<section class="skills">
+<section class="skills" id="skills">
+    <h2 class="titu">Skills</h2>
     <div class="containers">
         <div class="skill1">
             <h2>Minhas Skills</h2>
@@ -182,15 +196,24 @@
                 <div class="progress-bar" value="30%">
                     <div class="progress-line" style="max-width: 30%"></div>
                 </div>
-<<<<<<< HEAD
+            </div>
+            <div class="skill">
+                <div class="subject">Git e Github</div>
+                <div class="progress-bar" value="40%">
+                    <div class="progress-line" style="max-width: 40%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="subject">React - Iniciante</div>
+                <div class="progress-bar" value="30%">
+                    <div class="progress-line" style="max-width: 30%"></div>
+                </div>
             </div>
         </div>
         <div class="skill2">
             <h2>Design Skills</h2>
             <br>
             <div class="skill2">
-=======
->>>>>>> 1140fa04677508df96237b4817c3523dde72b526
             </div>
             <div class="skill">
                 <div class="subject">Photoshop - Intermediário </div>
@@ -210,23 +233,11 @@
                     <div class="progress-line" style="max-width: 40%"></div>
                 </div>
             </div>
-            <div class="skill">
-                <div class="subject">Git e Github</div>
-                <div class="progress-bar" value="40%">
-                    <div class="progress-line" style="max-width: 40%"></div>
-                </div>
-            </div>
         </div>
             <div class="skill2">
                 <h2>Estudando Skills</h2>
                 <br>
                 <div class="skill2">
-                </div>
-                <div class="skill">
-                    <div class="subject">React - Iniciante</div>
-                    <div class="progress-bar" value="5%">
-                        <div class="progress-line" style="max-width: 5%"></div>
-                    </div>
                 </div>
                 <div class="skill">
                     <div class="subject">Node.js - Iniciante </div>
@@ -261,9 +272,9 @@
     </div>
 </section>
 <main>
-    <article aria-label="seção sobre mim" class="sobre" >
-        <div class="sobre_titulo" id="sobremim">
-            <h2 class="titulo">SOBRE<span> MIM</span></h2>
+    <article aria-label="seção sobre mim" class="sobre" id="sobremim" >
+        <div class="sobre_titulo" >
+            <h2 class="titulo">SOBRE<span>MIM</span></h2>
         </div>
         <img src="assets/mii.png" alt="Adrielle Jcds">
         <div class="sobre_conteudo" >
@@ -275,7 +286,7 @@
                 <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: Disponível</p>
                 <p><i class="fa-solid fa-location-dot"></i>Endereço: São Paulo, Brasil</p>
                 <p><i class="fa-sharp fa-solid fa-globe"></i>Idiomas: Brazil e Inglês</p>
-                <p><i class="fa-solid fa-phone-volume"></i>Phone: +55 (13)991481307</p>
+                <p><i class="fa-solid fa-phone-volume"></i>Celular: +55 (13)991481307</p>
                 <p><i class="fa-solid fa-envelope"></i>Email: adrielle.dev@gmail.com</p>
             </div>
         </div>
@@ -287,4 +298,3 @@
 </footer>
 </body>
 </html>
-
