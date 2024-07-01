@@ -19,16 +19,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estrelasfundo.css">
     <title>Galáxia Artz</title>
-    <link rel="stylesheet" href="estilos do css/bodystyle.css">
-    <link rel="stylesheet" href="estilos do css/nav.css">
-    <link rel="stylesheet" href="estilos do css/estiloheader.css">
-    <link rel="stylesheet" href="estilos do css/toposite.css">
-    <link rel="stylesheet" href="estilos do css/icones.css">
-    <link rel="stylesheet" href="estilos do css/projetos.css">
-    <link rel="stylesheet" href="estilos do css/sobremim.css">
-    <link rel="stylesheet" href="estilos do css/skills.css">
-    <link rel="stylesheet" href="estilos do css/footer.css">
-    <link rel="stylesheet" href="estilos do css/estrelasfundo.css">
     <title>JinnieArtz</title>
 	</head>
 <body>
@@ -70,19 +60,17 @@
 
     function abrirMenu() {
         const botoesMenu = document.getElementById('botoesMenu');
-        botoesMenu.classList.toggle('responsivo'); // Toggle para adicionar ou remover a classe responsivo
+        botoesMenu.classList.toggle('responsivo'); 
     }
 
-    // Função para fechar o menu após selecionar um item
     function fecharMenu() {
         const botoesMenu = document.getElementById('botoesMenu');
-        botoesMenu.classList.remove('responsivo'); // Remove a classe responsivo para fechar o menu
+        botoesMenu.classList.remove('responsivo'); 
     }
 
-    // Selecionando todos os links dentro do menu para adicionar o evento de fecharMenu()
     const linksMenu = document.querySelectorAll('#botoesMenu a');
     linksMenu.forEach(link => {
-        link.addEventListener('click', fecharMenu); // Adiciona o evento de clique para fechar o menu
+        link.addEventListener('click', fecharMenu); 
     });
 </script>
 
