@@ -18,61 +18,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fugaz+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estrelasfundo.css">
-    <title>Jinnie Artz</title>
+    <title>Jinnie</title>
 	</head>
 <body>
     <nav>
-      <div class="logo">
-          <h1>Jinnie<span>artz</span></h1>
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>Jinnie</h1>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="abrirMenu()">&#9776;</button>
+            </div>
+    
+            <nav class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Serviços Contratáveis</a></li>
+                    <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre Mim</a></li>
+                </ul>
+            </nav>
+    
         </div>
-        <button onclick="abrirMenu()">&#9776;</button>
-        <ul id="botoesMenu">
-            <a href="home.html" >
-                <li>
-                    <p>Início</p>
-                </li>
-            </a>
-            <a href="#projetos">
-                <li>
-                    <p>Projetos</p>
-                </li>
-            </a>
-            <a href="#skills">
-                <li>
-                    <p>Skills</p>
-                </li>
-            </a>
-            <a href="#sobremim">
-                <li>
-                    <p>Sobre mim</p>
-                </li>
-            </a>
-        </ul> 
-</nav>
-<script>
-    const arrayHeight = document.getElementsByClassName('height-nav');
-    const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
-
-    for (let navHeightObj of arrayHeight) {
-        navHeightObj.style.height = navHeight + 'px';
-    }
-
-    function abrirMenu() {
-        const botoesMenu = document.getElementById('botoesMenu');
-        botoesMenu.classList.toggle('responsivo'); 
-    }
-
-    function fecharMenu() {
-        const botoesMenu = document.getElementById('botoesMenu');
-        botoesMenu.classList.remove('responsivo'); 
-    }
-
-    const linksMenu = document.querySelectorAll('#botoesMenu a');
-    linksMenu.forEach(link => {
-        link.addEventListener('click', fecharMenu); 
-    });
-</script>
-
+    
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="home.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#service" class="nav-link">Serviços Contratáveis</a></li>
+                <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre Mim</a></li>
+            </ul>
+        </div>
+    </nav>
+    
 
     <section class="topo-do-site" id="inicio">
         <div class="interface">
@@ -92,7 +72,7 @@
                 </div>
                 </div>
                 <div class="img-topo-site">
-                     <img src="assets/me.png" alt="eu">
+                     <img src="assets/galaxia.png" alt="eu">
                  </div>
             </div>
         </div>
@@ -162,126 +142,176 @@
 </section>
 <section class="skills" id="skills">
     <h2 class="titu">Skills</h2>
-    <div class="containers">
-        <div class="skill1">
-            <h2>Minhas Skills</h2>
-            <br>
-            <div class="skill">
-                <div class="subject">HTML - Intermediário </div> 
-                <div class="progress-bar" value="70%">
-                    <div class="progress-line" style="max-width: 70%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="subject">Css - Intermediário </div>
-                <div class="progress-bar" value="60%">
-                    <div class="progress-line" style="max-width: 60%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="subject">JavaScript - Iniciante</div>
-                <div class="progress-bar" value="30%">
-                    <div class="progress-line" style="max-width: 30%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="subject">Git e Github</div>
-                <div class="progress-bar" value="40%">
-                    <div class="progress-line" style="max-width: 40%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="subject">React - Iniciante</div>
-                <div class="progress-bar" value="30%">
-                    <div class="progress-line" style="max-width: 30%"></div>
-                </div>
+    <div class="skill-container">
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <div class="skill-info">
+                <div class="skill-name">HTML</div>
+                <div class="skill-level">Intermediário</div>
             </div>
         </div>
-        <div class="skill2">
-            <h2>Design Skills</h2>
-            <br>
-            <div class="skill2">
-            </div>
-            <div class="skill">
-                <div class="subject">Photoshop - Intermediário </div>
-                <div class="progress-bar" value="65%">
-                    <div class="progress-line" style="max-width: 65%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="subject">Ilustração - Intermediário </div>
-                <div class="progress-bar" value="80%">
-                    <div class="progress-line" style="max-width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="subject">Design Ux - Iniciante </div>
-                <div class="progress-bar" value="40%">
-                    <div class="progress-line" style="max-width: 40%"></div>
-                </div>
+        <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+            <div class="skill-info">
+                <div class="skill-name">CSS</div>
+                <div class="skill-level">Intermediário</div>
             </div>
         </div>
-            <div class="skill2">
-                <h2>Estudando Skills</h2>
-                <br>
-                <div class="skill2">
+        <div class="skill">
+            <i class="fab fa-js"></i>
+            <div class="skill-info">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-git-alt"></i>
+            <div class="skill-info">
+                <div class="skill-name">Git e Github</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-react"></i>
+            <div class="skill-info">
+                <div class="skill-name">React</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-pencil-alt"></i>
+            <div class="skill-info">
+                <div class="skill-name">Photoshop</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-paint-brush"></i>
+            <div class="skill-info">
+                <div class="skill-name">Ilustração</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-video"></i>
+            <div class="skill-info">
+                <div class="skill-name">Edição de Vídeo</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-node"></i>
+            <div class="skill-info">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-python"></i>
+            <div class="skill-info">
+                <div class="skill-name">Python</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-php"></i>
+            <div class="skill-info">
+                <div class="skill-name">PHP</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-database"></i>
+            <div class="skill-info">
+                <div class="skill-name">SQL</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-network-wired"></i>
+            <div class="skill-info">
+                <div class="skill-name">APIs</div>
+                <div class="skill-level">Iniciante</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="servicos" id="service">
+    <div class="interfaces">
+        <h2 class="titulo">Serviços Contratáveis</h2>
+        <p>Explore os serviços que ofereço:</p>
+        <div class="flexis">
+            <div class="servico">
+                <div class="informacoes">
+                    <h2>UX Designer</h2>
+                    <p>Criação de wireframes, protótipos interativos e testes de usabilidade.</p>
+                    <!-- <a href="#ux-designer" class="btn-servico">Ver mais</a> -->
                 </div>
-                <div class="skill">
-                    <div class="subject">Node.js - Iniciante </div>
-                    <div class="progress-bar" value="5%">
-                        <div class="progress-line" style="max-width: 5%"></div>
-                    </div>
+            </div>
+            <div class="servico">
+                <div class="informacoes">
+                    <h2>Designer Gráfico</h2>
+                    <p>Desenvolvimento de logotipos, banners e materiais de marketing visual.</p>
+                    <!-- <a href="#designer-grafico" class="btn-servico">Ver mais</a> -->
                 </div>
-                <div class="skill">
-                    <div class="subject">Python - Iniciante </div>
-                    <div class="progress-bar" value="20%">
-                        <div class="progress-line" style="max-width: 20%"></div>
-                    </div>
+            </div>
+            <div class="servico">
+                <div class="informacoes">
+                    <h2>Criação de Sites</h2>
+                    <p> Design e desenvolvimento de sites responsivos e otimizados para SEO.</p>
+                    <!-- <a href="#criacao-sites" class="btn-servico">Ver mais</a> -->
                 </div>
-                <div class="skill">
-                    <div class="subject">PHP - Iniciante </div>
-                    <div class="progress-bar" value="5%">
-                        <div class="progress-line" style="max-width: 5%"></div>
-                    </div>
+            </div>
+            <div class="servico">
+                <div class="informacoes">
+                    <h2>Designer Digital</h2>
+                    <p>Criação de artes digitais para redes sociais e campanhas publicitárias entre outros.</p>
+                    <!-- <a href="#designer-digital" class="btn-servico">Ver mais</a> -->
                 </div>
-                <div class="skill">
-                    <div class="subject">SQL - Iniciante</div>
-                    <div class="progress-bar" value="5%">
-                        <div class="progress-line" style="max-width: 5%"></div>
-                    </div>
+            </div>
+            <div class="servico">
+                <div class="informacoes">
+                    <h2>Edição de Vídeo</h2>
+                    <p>Criação e edição de vídeos para canais do YouTube, vídeos corporativos e mais.</p>
+                    <!-- <a href="#editora-video" class="btn-servico">Ver mais</a> -->
                 </div>
-                <div class="skill">
-                    <div class="subject">API - Iniciante </div>
-                    <div class="progress-bar" value="5%">
-                        <div class="progress-line" style="max-width: 5%"></div>
-                    </div>
-                </div>
+            </div>
+            
     </div>
 </section>
 <main>
-    <article aria-label="seção sobre mim" class="sobre" id="sobremim" >
-        <div class="sobre_titulo" >
-            <h2 class="titulo">SOBRE<span>MIM</span></h2>
-        </div>
-        <img src="assets/mii.png" alt="Adrielle Jcds">
-        <div class="sobre_conteudo" >
+    <article aria-label="seção sobre mim" class="sobre" id="sobremim">
+    
+        <div class="sobre_conteudo">
+            <div class="sobre_imagem">
+                <img src="assets/dri.png" alt="Adrielle Jcds">
+                <div class="sobre_info">
+                    <p><i class="fas fa-laptop-code"></i> Freelance: Disponível</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Endereço: São Carlos, São Paulo, Brasil.</p>
+                    <p><i class="fas fa-envelope"></i> Email: adrielle.dev@gmail.com</p>
+                </div>
+            </div>
             <div class="sobre_texto">
+                <div class="sobre_titulo">
+                    <h2 class="titu">Sobre mim</h2>
+                </div>
                 <h2>Eu sou a Adrielle</h2>
-                <p>• Trabalho Unimed maternidade de São Carlos, como jovem aprendiz na farmácia.<br>• Estou estudando Análise e Desenvolvimento de Sistemas na anhanguera. <br> • Hobbies: Ler, estudar, jogar, criação de artes, assistir séries e filmes <br> • Gosto de: doces, dinossauro, pizza.</div>
-            <div class="sobre_info">
-                <p><i class="fa-solid fa-calendar-days"></i>Data de nascimento: 18/09/2003</p>
-                <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: Disponível</p>
-                <p><i class="fa-solid fa-location-dot"></i>Endereço: São Paulo, Brasil</p>
-                <p><i class="fa-sharp fa-solid fa-globe"></i>Idiomas: Brazil e Inglês</p>
-                <p><i class="fa-solid fa-phone-volume"></i>Celular: +55 (13)991481307</p>
-                <p><i class="fa-solid fa-envelope"></i>Email: adrielle.dev@gmail.com</p>
+<p>Mas pode me chamar apenas de Dri.</p>
+<br>
+<p>Atualmente, trabalho como atendente de farmácia na Unimed Maternidade de São Carlos. Estou cursando Análise e Desenvolvimento de Sistemas na Anhanguera e sempre estou em busca de novos desafios e oportunidades de aprendizado.</p>
+<p>Nos meus momentos livres, gosto de ler, estudar, jogar e criar artes. Sou apaixonada por assistir séries e filmes com legendas para aprender novos idiomas, especialmente doramas. Tenho um grande interesse por jogos, desenho, culinária e artesanato.</p>
+
             </div>
         </div>
     </article>
 </main>
+
 <footer>
     <img class="topo-logo" src="assets/OIG2 (1).png" alt="galaxia_artz" title="Mascote">
     <p class="author-info">Criado por Adrielle Jcds - 2023</p>
 </footer>
+<script src="assets/script.js"></script>
+
 </body>
 </html>
