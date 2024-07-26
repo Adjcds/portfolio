@@ -604,7 +604,7 @@ main .sobre {
 
 .sobre_imagem img {
     max-width: 100%;
-    width: 60%; /* Ajuste a largura da imagem conforme necessário */
+    width: 60%; 
     border-radius: 4px;
     filter: blur(0);
 }
@@ -613,7 +613,7 @@ main .sobre {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center; /* Centraliza os ícones e texto */
+    align-items: center; 
 }
 
 .sobre_info p {
@@ -641,7 +641,7 @@ main .sobre {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) { /* Ajuste para dispositivos menores */
+@media (min-width: 768px) { 
     main .sobre {
         grid-template-columns: 1fr;
         padding: 40px 4%;
@@ -652,7 +652,7 @@ main .sobre {
     }
 
     .sobre_imagem img {
-        width: 80%; /* Ajuste a largura da imagem conforme necessário */
+        width: 50%; /
     }
 
     .sobre_texto h2 {
@@ -669,7 +669,7 @@ main .sobre {
     }
 }
 
-@media (max-width: 480px) { /* Ajuste para dispositivos ainda menores */
+@media (max-width: 480px) { 
     main .sobre {
         padding: 20px 4%;
     }
@@ -680,11 +680,11 @@ main .sobre {
     }
 
     .sobre_imagem img {
-        width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura do container */
+        width: 90%; /
     }
 
     .sobre_info {
-        text-align: center; /* Centraliza o texto e ícones */
+        text-align: center; 
     }
 
     .sobre_texto h2 {
